@@ -1,5 +1,5 @@
 body {
-    background-color: #dfdfdf;
+    background-color: #efefef;
 }
 
 header, footer {
@@ -9,12 +9,48 @@ header, footer {
     color: white;
 }
 
-main {
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 50px;
+#left {
+    width: 15%;
+    float: left;
+    padding: 20px;
+    background-color: #efefef;
+}
+
+#content {
+    width: 70%;
+    float: left;
+    padding: 20px;
     background-color: white;
-    color: black;
+}
+
+#right {
+    width: 15%;
+    float: left;
+    padding: 20px;
+    background-color: #efefef;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0px;
+    margin-top: 20px;
+}
+
+.navigation li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.navigation li a {
+    text-decoration: none;
+}
+
+.rounded {
+    border-radius: 9999px!important;
+}
+
+.rect {
+    border-radius: 0px!important;
 }
 
 .custom-card {
