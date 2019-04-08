@@ -1,0 +1,22 @@
+body {
+    background-color: #dfdfdf;
+}
+
+header, footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #005fff;
+    color: white;
+}
+
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: white;
+    color: black;
+}
+
+.custom-card {
+    background-color: #efefef;
+}
