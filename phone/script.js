@@ -49,12 +49,8 @@ function hideRun() {
 function showRun() {
     document.getElementById("run").setAttribute("style", "display: block;");
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
+        navigator.geolocation.getCurrentPosition(function() {});
     }
-}
-
-function showPosition(position) {
-    console.log(position.coords.latitude + ", " + position.coords.longitude);
 }
 
 function hideSubmit() {
