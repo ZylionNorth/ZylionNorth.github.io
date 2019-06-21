@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="script.js" type="text/javascript"></script>
+    </head>
+    <body>
+        Please choose a method of entering your phone number<br>
+        <select id="method-select" onchange="updateMethods()">
+            <option value="0">-</option>
+            <option value="1">Method 1</option>
+            <option value="2">Method 2</option>
+            <option value="3">Method 3</option>
+            <option value="4">Method 4</option>
+            <option value="5">Method 5</option>
+            <option value="6">Method 6</option>
+        </select>
+        <br><br>
+        <div id="method-label" style="display: none;">
+            Please enter your phone number<br>
+        </div>
+        <div id="methods">
+            <div id="method-1" style="display: none;">
+                ( <input type="text" style="width: 60px;"> ) <input type="text" style="width: 60px;"> - <input type="text" style="width: 60px;">
+            </div>
+            <div id="method-2" style="display: none;">
+                <input type="text">
+            </div>
+            <div id="method-3" style="display: none;">
+                (<select class="three-digits"></select>) 
+                <select class="three-digits"></select> -
+                <select class="four-digits"></select>
+            </div>
+            <div id="method-4" style="display: none;">
+                <input type="range" id="slider" min="0" max="9999999999" value="0" onchange="updateSlider()">
+                <div id="slider-label">(000) 000-0000</div>
+            </div>
+            <div id="method-5" style="display: none;">
+                <input type="text" id="number-plus" value="(000) 000-0000" disabled>
+                <button type="button" onclick="incrementNumber()">+</button>
+            </div>
+            <div id="method-6" style="display: none;">
+                <input type="text" id="random-number" disabled>
+                <button type="button" onclick="updateRandom()">No, that's not it, guess again</button>
+            </div>
+            <br>
+            <button type="button" id="submit-button" onclick="showRun()" style="display: none;">Submit</button>
+            <div id="run" style="display: none;">run</div>
+        </div>
+    </body>
+</html>
