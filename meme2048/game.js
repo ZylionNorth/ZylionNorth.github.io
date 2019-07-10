@@ -105,3 +105,8 @@ window.addEventListener("load", function() {
     game = new Game(30);
     game.board.newTile();
 });
+
+function chico() {
+    game.board.tiles[0][0] = 2048;
+    game.playerWin();
+}
