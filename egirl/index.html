@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Egirl Test</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script type="text/javascript" src="questions.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Egirl Test</h1>
+        </header>
+        <main>
+            <div id="questions"></div>
+            <div id="results">
+                <p>You are</p>
+                <h2 id="percent">0%</h2>
+                <p>an egirl!</p>
+                <p style="margin: 16px 0;">You scored: <span id="score">0</span> out of <span id="total">0</span></p>
+            </div>
+            <label for="share-link">Share your results:</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="share-link" disabled>
+                <div class="input-group-append">
+                    <button class="input-group-text btn btn-primary" onclick="copyLink();">Copy</button>
+                </div>
+            </div>
+            <img src="egirl.png" class="stretch hidden" id="egirl-img">
+        </main>
+    </body>
+</html>
