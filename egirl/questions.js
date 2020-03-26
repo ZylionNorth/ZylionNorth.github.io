@@ -34,7 +34,7 @@ more online friends than irl
 never dated irl
 is lowkey a snake
 listens to ariana grande
-hides behind minecraft hacker egoys
+hides behind minecraft hacker eboys
 matching minecraft skins
 eboys name in insta bio
 believes in astrology signs
