@@ -82,7 +82,7 @@ function main() {
     document.getElementById("total").innerText = questionsSplit.length;
 
     decodeAnswers();
-    encodeAnswers();
+    updateScore();
 }
 
 window.addEventListener("load", main);
